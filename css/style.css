@@ -1,0 +1,663 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+a,
+p {
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2em;
+    color: #111;
+    /*   color: #B24904;   point color: 111*/
+}
+
+font {
+    font-family: 'Crimson Text', serif;
+    /*서브 글씨*/
+    font-family: 'Wix Madefor Display', sans-serif;
+    /*굵은 메인 글씨 600, 800*/
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #E3EDF2;
+}
+
+/*************** page1Wrap ***************/
+#page1Wrap {
+    width: 100%;
+    height: 1000px;
+    /*   background: #999; */
+}
+
+.top_header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /*   background: green; */
+}
+
+header {
+    /*   margin: 0 auto; */
+    width: 95%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu {
+    width: 100px;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+}
+
+.menu li {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    /*   background: yellow; */
+}
+
+.sub_menu {
+    position: absolute;
+    width: 100%;
+}
+
+.sub_menu li {
+    width: 100%;
+    position: relative;
+    /*   background: brown; */
+}
+
+.sub_menu li:hover>a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.subsub_menu {
+    position: absolute;
+    width: 100%;
+    left: 100px;
+    top: 0px;
+}
+
+.subsub_menu li {
+    width: 100%;
+    /*   background: grey; */
+}
+
+.logo {
+    margin: auto;
+    /*   width: 250px; */
+    /*   background: red; */
+}
+
+.logo a {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.nav {
+    width: 250px;
+    margin-left: auto;
+    margin-right: 5%;
+    /*   background: red; */
+}
+
+.nav li {
+    float: left;
+    width: 33.33%;
+}
+
+.nav a {
+    display: block;
+}
+
+.p1Top {
+    width: 95%;
+    height: 220px;
+    margin: 0 auto;
+    text-align: center;
+    /*   background: red; */
+}
+
+.p1Top p {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    line-height: 1.1em;
+    letter-spacing: 0.05em;
+    padding-top: 4.5%;
+}
+
+.p1Mid {
+    width: 95%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    /*   background: blue; */
+}
+
+.p1Mid .p1Con {
+    width: 180px;
+    height: 630px;
+    margin-left: -10%;
+    /*   background: green; */
+}
+
+.p1Mid .p1Con p {
+    width: 230%;
+    height: 50%;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2em;
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    margin-top: 145%;
+    margin-left: -15%;
+    line-height: 1.5em;
+}
+
+.p1Mid .p1Con span {
+    font-weight: bold;
+}
+
+.p1Mid .p1Img {
+    width: 460px;
+    height: 630px;
+    position: relative;
+    overflow: hidden;
+    /*   background: pink; */
+}
+
+.p1Mid .p1Img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+/*************** page2Wrap ***************/
+#page2Wrap {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*   background: #888; */
+}
+
+.p2Mid {
+    width: 45%;
+    height: 35%;
+    /*   background: pink; */
+}
+
+.p2Mid p {
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+/*************** page3Wrap ***************/
+#page3Wrap {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*   background: #777; */
+}
+
+.p3Left {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*   background: green; */
+}
+
+.p3Left p:first-child {
+    width: 625px;
+    height: 200px;
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.3em;
+    /*   background: blue; */
+}
+
+.p3Left p:last-child {
+    width: 455px;
+    height: 85px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 3%;
+    font-size: 1em;
+    text-align: left;
+    /*   background: lightblue; */
+}
+
+.p3Right {
+    width: 30%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*   background: darkgreen; */
+}
+
+.p3Right .p3ImgNum {
+    width: 50px;
+    height: 20px;
+    margin-left: 400px;
+    /*   background: blue; */
+}
+
+.p3Right .p3ImgNum p {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+    text-align: right;
+}
+
+.p3Right .p3Img {
+    width: 450px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.p3Right .p3Img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*************** page4Wrap ***************/
+#page4Wrap {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    /*   background: #666; */
+}
+
+.p4Con {
+    width: 200px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*   background: gray; */
+}
+
+.p4Con p {
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+
+}
+
+.p4Con .title {
+    width: 250px;
+    height: 40px;
+    font-size: 1.9em;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 800;
+    margin-top: 530px;
+    /*   background: lightgray; */
+}
+
+.p4Con .subtitle {
+    width: 170px;
+    height: 40px;
+    font-size: 0.9em;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: lighter;
+    margin-left: 100px;
+    /*   background: darkgray; */
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clear {
+    clear: both;
+}
+
+.p4ImgSlide {
+    width: 80%;
+    height: 800px;
+    overflow: hidden;
+    /*   background: white; */
+}
+
+.p4ImgSlide .banner {
+    width: 100%;
+    height: 100%;
+    /*   border: 1px solid #ccc; */
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.p4ImgSlide .banner ul {
+    width: 300%;
+    height: 800px;
+    position: relative;
+    left: -300px;
+}
+
+.p4ImgSlide .banner ul li {
+    float: left;
+    width: 450px;
+    height: 800px;
+    /*   background: green; */
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.p4ImgSlide .banner ul li img {
+    width: 410px;
+    height: 600px;
+    cursor: pointer;
+}
+
+.p4ImgSlide .banner ul li p {
+    text-align: left;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.p4ImgSlide .banner ul li p:first-child {
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.p4ImgSlide .banner ul li p:nth-child(3) {
+    font-weight: lighter;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.p4ImgSlide .banner ul li p:last-child {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+/*************** page5Wrap ***************/
+#page5Wrap {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /*   background: #555; */
+}
+
+.footer {
+    width: 95%;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    /*   background: blue; */
+}
+
+.footer>* {
+    width: 380px;
+    height: 100%;
+}
+
+.foo1,
+.foo2,
+.foo3,
+.foo4 {
+    /*   background: #111; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foo1 .f1Con,
+.f2Con,
+.f3Con,
+.f4Con {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*   background: #999; */
+}
+
+.foo1 .f1Con p,
+.f2Con a,
+.f3Con a,
+.f4Con a {
+    font-size: 0.9em;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.foo1 .f1Con input#search {
+    margin-top: 5%;
+    width: 250px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 1px solid #FDC605;
+}
+
+.foo2 {
+    /*   background: #222; */
+}
+
+.foo3 {
+    /*   background: #333; */
+}
+
+.foo4 {
+    /*   background: #444; */
+}
+
+/* wrapBlack */
+.wrapBlack {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3700px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 30;
+}
+
+/* layer popup */
+#popup {
+    width: 700px;
+    height: 700px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 2700px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*   border: 1px solid black; */
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+}
+
+#popup .topCon {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*   background: red; */
+}
+
+#popup .topCon .leftCon {
+    width: 52%;
+    height: 95%;
+    margin: 0 auto;
+    /*   background: green; */
+}
+
+#popup .topCon .leftCon .imgList {
+    width: 300px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 7.5%;
+    z-index: 100;
+}
+
+#popup .topCon .leftCon .imgList li {
+    width: 300px;
+    height: 450px;
+    /*   background: pink; */
+}
+
+#popup .topCon .leftCon .imgList li img {
+    width: 300px;
+    height: 450px;
+    display: block;
+}
+
+#popup .topCon .rightCon {
+    width: 43%;
+    height: 95%;
+    margin: 0 auto;
+    /*   background: lightgreen; */
+}
+
+#popup .topCon .rightCon p.close {
+    width: 25px;
+    height: 25px;
+    text-align: right;
+    margin-left: 87.5%;
+    cursor: pointer;
+}
+
+#popup .topCon .rightCon .imgCon {
+    width: 260px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 20%;
+    /*   background: pink; */
+}
+
+#popup .topCon .rightCon .imgCon p {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+#popup .topCon .rightCon .imgCon p:first-letter {
+    font-size: 1.5em;
+}
+
+#popup .bottomCon {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*   background: blue; */
+}
+
+#popup .bottomCon .leftCon {
+    width: 52%;
+    height: 90%;
+    margin: 0 auto;
+    /*   background: green; */
+}
+
+#popup .bottomCon .leftCon .nameNprice {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 5%;
+    /*   background: lightpink; */
+}
+
+#popup .bottomCon .leftCon .nameNprice p {
+    text-align: left;
+    font-family: 'Wix Madefor Display', sans-serif;
+    line-height: 1.5em;
+}
+
+#popup .bottomCon .leftCon .nameNprice p:first-child {
+    font-weight: lighter;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#popup .bottomCon .leftCon .nameNprice p:last-child {
+    font-weight: 800;
+    font-size: 2em;
+}
+
+#popup .bottomCon .rightCon {
+    width: 43%;
+    height: 90%;
+    background: lightgreen;
+    margin: 0 auto;
+}
