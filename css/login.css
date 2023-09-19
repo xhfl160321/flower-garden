@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+a,
+p {
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2em;
+    color: #111;
+    /*   color: #B24904;   point color: 111*/
+}
+
+font {
+    font-family: 'Crimson Text', serif;
+    /*서브 글씨*/
+    font-family: 'Wix Madefor Display', sans-serif;
+    /*굵은 메인 글씨 600, 800*/
+}
+
+#logWrap, #joinWrap{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    background: #E3EDF2;
+}
+
+#logForm, #joinForm{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border-top-left-radius: 20%;
+    background: #6eafad;
+}
+
+.logTitle, .joinTitle {
+    width: 200px;
+    height: 80px;
+    /* background: green; */
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 13.5%;
+}
+.logTitle p, .joinTitle p{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+    text-align: center;
+}
+
+.logCon, .joinCon{
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 3.5%;
+    display: grid;
+    align-self: flex-start;
+    justify-items: center;   
+    align-items: center;
+    background: rgba(255,255,255,0.5);
+}
+
+.logBtn, .joinBtn{
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    /* background: lightblue; */
+}
+
+.logCon input, .joinCon input{
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+}
+
+.logBtn, .joinBtn{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.logBtn input, .joinBtn input{
+    border: none;
+    width: 60px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
