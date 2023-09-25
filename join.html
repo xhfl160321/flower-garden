@@ -7,22 +7,39 @@
     <title>Flower Garden Join</title>
 </head>
 <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Wix+Madefor+Display:wght@600;800&display=swap"
+        rel="stylesheet">
+
     <div id="joinWrap">
         <div id="joinForm">
-            <div class="joinTitle">
-                <p>JOIN</p>
+            <div class="backTomain"><a href="index.html">✖</a></div>
+            <div class="joinImg">
+                <img src="images/01.jpg" alt="bgImg">
             </div>
-            <form class="joinCon">
-                <input id="id" name="id" placeholder="id" type="text">
-                <input id="pw" name="pw" placeholder="password" type="password">
-                <input id="c_pw" name="c_pw" placeholder="password check" type="password">
-            </form>
-            <form class="joinBtn">
-                <input type="button" value="back" onclick="back();">
-                <input type="button" value="join" onclick="create_id();">
-            </form>
+
+            <div class="joinBox">
+                <div class="joinTitle">
+                    <p>JOIN</p>
+                </div>
+                <form class="joinCon">
+                    <input id="id" name="id" placeholder="id" type="text">
+                    <input id="pw" name="pw" placeholder="password" type="password">
+                    <input id="c_pw" name="c_pw" placeholder="password check" type="password">
+                </form>
+                <form class="joinBtn">
+                    <input type="button" value="back" onclick="back();">
+                    <input type="button" value="join" onclick="create_id();">
+                </form>
+            </div>        
         </div>
-        
+        <div class="welcomeLog">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum debitis laudantium aperiam accusamus, <br>
+            ducimus sint praesentium est delectus consectetur fuga culpa iusto quos laboriosam nulla maxime,
+            <br> harum minima, ipsa obcaecati?</p>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
